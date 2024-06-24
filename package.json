@@ -1,0 +1,42 @@
+{
+  "name": "lollipop",
+  "packageManager": "yarn@1.22.22",
+  "license": "BSD-3-Clause",
+  "browserslist": "> 5%, last 2 versions, not dead",
+  "scripts": {
+    "frontend:dev": "parcel",
+    "frontend:build": "parcel build",
+    "backend:dev": "tauri dev",
+    "backend:build": "tauri build",
+    "dev": "yarn backend:dev"
+  },
+  "source": "./src/public/index.html",
+  "dependencies": {
+    "@nextui-org/button": "^2.0.34",
+    "@nextui-org/react": "^2.4.2",
+    "@styled-icons/boxicons-regular": "^10.47.0",
+    "@styled-icons/boxicons-solid": "^10.47.0",
+    "@tauri-apps/api": "^2.0.0-beta.13",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "framer-motion": "^11.2.10",
+    "i18next": "^23.11.5",
+    "mobx": "^6.12.4",
+    "mobx-react-lite": "^4.0.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^14.1.2",
+    "react-router-dom": "^6.23.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.21.1",
+    "@tauri-apps/cli": "^2.0.0-beta.20",
+    "eslint": "^8",
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.38",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5"
+  }
+}
