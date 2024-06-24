@@ -1,5 +1,7 @@
 version = 1
 
+exclude_patterns = ["src/bindings.ts"]
+
 [[analyzers]]
 name = "rust"
 
@@ -12,3 +14,6 @@ name = "javascript"
   [analyzers.meta]
   plugins = ["react"]
   environment = ["browser"]
+
+[[transformers]]
+name = "rustfmt"
