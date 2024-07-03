@@ -1,14 +1,18 @@
 import React from 'react'
+import { PrimeReactProvider } from 'primereact/api'
 import { createRoot } from 'react-dom/client'
-import { NextUIProvider } from '@nextui-org/react'
 import App from '@/App'
 
 const container = document.getElementById('app')
 const root = createRoot(container as HTMLElement)
 root.render(
   <React.StrictMode>
-    <NextUIProvider>
+    <PrimeReactProvider
+      value={{
+        ripple: true,
+      }}
+    >
       <App />
-    </NextUIProvider>
+    </PrimeReactProvider>
   </React.StrictMode>,
 )

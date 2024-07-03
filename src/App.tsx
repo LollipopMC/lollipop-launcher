@@ -1,7 +1,10 @@
 import React from 'react'
-import { Button } from '@nextui-org/button'
+import { Button } from 'primereact/button'
 import { LogicalSize, getCurrent } from '@tauri-apps/api/window'
+import { Smile } from '@styled-icons/boxicons-regular'
 import { commands, events } from '@/bindings'
+
+const __VERSION__ = '1.0.0'
 
 export default function App() {
   const [path, setPath] = React.useState('')
@@ -33,14 +36,19 @@ export default function App() {
           window.setSize(new LogicalSize(600, 800))
           commands.helloWorld('Lollipop').then(console.log)
         }}
-        variant="solid"
         color="primary"
-        size="lg"
+        size="small"
+        label="启动 理工大学"
         className="font-bold"
-      >
-        启动 理工大学
-      </Button>
+        icon={({ iconProps }: { iconProps: any }) => {
+          return (
+            <Smile {...iconProps} size={20} />
+          )
+        }}
+      />
       <span>{path}</span>
     </div>
   )
 }
+
+export { __VERSION__ }
