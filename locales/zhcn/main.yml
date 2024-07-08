@@ -1,0 +1,9 @@
+welcomeMessage: 欢迎，
+launchGame: 启动游戏
+defaultGroup: 默认组
+noVersionSelected: 未选择版本
+selectVersionPlaceholder:
+  title: 选择一个版本...
+  description: 或者在列表中选择“新建版本”以继续...
+clickToChangeAccount: 点击以切换账号
+logonWith: '登录为: {{authProvider}}'

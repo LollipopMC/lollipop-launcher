@@ -1,0 +1,16 @@
+helloWorld: Hello, World!
+cancel: Cancel
+submit: Submit
+continue: Continue
+close: Close
+yes: Yes
+no: No
+valid: Valid
+invalid: Invalid
+unverified: Unverified
+required: Required
+optional: Optional
+navigationMenu:
+  main: Main
+  module: Module
+  setting: Setting

@@ -1,6 +1,9 @@
 import process from 'node:process'
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import i18nextLoader from 'vite-plugin-i18next-loader'
+import react from '@vitejs/plugin-react-swc'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   // prevent vite from obscuring rust errors
@@ -22,5 +25,11 @@ export default defineConfig({
   },
   plugins: [
     tsconfigPaths(),
+    i18nextLoader({
+      namespaceResolution: 'basename',
+      paths: ['./locales'],
+    }),
+    react(),
+    dts({ rollupTypes: true }),
   ],
 })

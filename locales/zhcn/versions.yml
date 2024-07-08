@@ -1,0 +1,6 @@
+latest:
+  release: 最新版本（正式版）
+  snapshot: 最新版本（快照）
+unknown: 未知版本
+modCount: '{{count}} 个模组'
+modCount_other: '{{count}} 个模组'

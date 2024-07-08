@@ -1,0 +1,6 @@
+latest:
+  release: Latest Release
+  snapshot: Latest Snapshot
+unknown: Unknown Version
+modCount_one: '{{count}} mod'
+modCount_other: '{{count}} mods'

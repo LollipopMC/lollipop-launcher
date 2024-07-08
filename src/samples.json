@@ -1,0 +1,77 @@
+{
+  "avatars": {
+    "steve": "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",
+    "zeithrold": "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"
+  },
+  "groups": [
+    {
+      "id": "ebf1f6d4-d79a-4652-a599-615f2f4ba4bd",
+      "name": "Lollipop ModPack"
+    }
+  ],
+  "versions": [
+    {
+      "id": "latest",
+      "properties": {
+        "minecraft": {
+          "version": "1.21",
+          "channel": "release"
+        }
+      }
+    },
+    {
+      "id": "5a686666-e119-4015-a1a4-780f9d534087",
+      "name": "1.20.4",
+      "properties": {
+        "minecraft": {
+          "version": "1.20.4",
+          "channel": "release"
+        }
+      }
+    },
+    {
+      "id": "6657aebb-fa9b-40a4-95d1-f582e1da3367",
+      "name": "1.20.4 with Forge",
+      "properties": {
+        "minecraft": {
+          "version": "1.20.4",
+          "channel": "release"
+        },
+        "mod": {
+          "api": "forge",
+          "count": 20
+        }
+      }
+    },
+    {
+      "id": "a0259110-68e0-4c97-a5df-131e2907a481",
+      "name": "Lollipop ModPack For 1.20.0",
+      "group": "ebf1f6d4-d79a-4652-a599-615f2f4ba4bd",
+      "properties": {
+        "minecraft": {
+          "version": "1.20.0",
+          "channel": "release"
+        },
+        "mod": {
+          "api": "fabric",
+          "count": 20
+        }
+      }
+    },
+    {
+      "id": "6c57cb3d-8106-43e3-a708-d7cf5a8ae78f",
+      "name": "Lollipop ModPack For 1.20.4",
+      "group": "ebf1f6d4-d79a-4652-a599-615f2f4ba4bd",
+      "properties": {
+        "minecraft": {
+          "version": "1.20.4",
+          "channel": "release"
+        },
+        "mod": {
+          "api": "fabric",
+          "count": 20
+        }
+      }
+    }
+  ]
+}

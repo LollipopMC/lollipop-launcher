@@ -1,6 +1,6 @@
 @layer tailwind-base, primereact, tailwind-utilities;
 
-@import 'primereact/resources/themes/mira/theme.css' layer(primereact);
+@import 'primereact/resources/themes/lara-light-amber/theme.css' layer(primereact);
 
 
 @layer tailwind-base {
@@ -10,4 +10,22 @@
 @layer tailwind-utilities {
   @tailwind components;
   @tailwind utilities;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.rendering-pixelated {
+  image-rendering: pixelated;
 }

@@ -1,0 +1,5 @@
+debugMode: Debug Mode
+dialog:
+  title: You are in debug mode
+  description: Debug mode allows you to see more information in Lollipop and enables the console. Lollipop will automatically catch uncaught exceptions and output them to the user interface, but if you need more detailed information, please check the console.
+uncaughtError: 'Debug Mode: Uncaught Exception'
