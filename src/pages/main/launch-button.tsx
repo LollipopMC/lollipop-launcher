@@ -14,8 +14,8 @@ const LaunchButton = observer(() => {
       size="large"
       disabled={disabled}
     >
-      <div className="flex flex-col items-center">
-        <span className="text-2xl font-extrabold">
+      <div className="flex flex-col py-1 items-center">
+        <span className="text-xl font-extrabold">
           {
             disabled
               ? t('noVersionSelected', { ns: 'main' })

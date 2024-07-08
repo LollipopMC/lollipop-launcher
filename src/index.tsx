@@ -1,3 +1,4 @@
+import '@/public/style.css'
 import React from 'react'
 import { PrimeReactProvider } from 'primereact/api'
 import { createRoot } from 'react-dom/client'
