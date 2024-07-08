@@ -3,8 +3,7 @@ import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import i18nextLoader from 'vite-plugin-i18next-loader'
 import react from '@vitejs/plugin-react-swc'
-import dts from 'vite-plugin-dts'
-import { createHtmlPlugin } from 'vite-plugin-html'
+import { ViteEjsPlugin } from 'vite-plugin-ejs'
 
 export default defineConfig({
   // prevent vite from obscuring rust errors
@@ -31,11 +30,10 @@ export default defineConfig({
       paths: ['./locales'],
     }),
     react(),
-    dts({ rollupTypes: true }),
-    createHtmlPlugin({
-      minify: true,
-      template: 'src/public/index.html',
-      entry: 'src/index.tsx',
+    ViteEjsPlugin((config) => {
+      return {
+        MODE: config.mode,
+      }
     }),
   ],
 })

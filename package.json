@@ -9,7 +9,8 @@
     "backend:dev": "tauri dev",
     "backend:build": "tauri build",
     "react-devtools": "react-devtools",
-    "dev": "yarn react-devtools & yarn backend:dev"
+    "build": "yarn backend:build",
+    "dev": "concurrently \"npm:react-devtools\" \"npm:backend:dev\""
   },
   "source": "./src/public/index.html",
   "dependencies": {
@@ -38,6 +39,7 @@
     "@tauri-apps/cli": "^2.0.0-beta.20",
     "@types/node": "^20.14.9",
     "@vitejs/plugin-react-swc": "^3.7.0",
+    "concurrently": "^8.2.2",
     "eslint": "^8",
     "postcss": "^8.4.38",
     "process": "^0.11.10",
@@ -45,9 +47,12 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5",
     "vite": "^5.3.3",
-    "vite-plugin-dts": "^3.9.1",
-    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-ejs": "^1.7.0",
     "vite-plugin-i18next-loader": "^2.0.12",
     "vite-tsconfig-paths": "^4.3.2"
+  },
+  "volta": {
+    "node": "20.15.0",
+    "yarn": "1.22.22"
   }
 }

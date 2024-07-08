@@ -11,7 +11,7 @@
   "app": {
     "windows": [
       {
-        "title": "",
+        "title": "Lollipop",
         "width": 400,
         "height": 600,
         "resizable": true,
