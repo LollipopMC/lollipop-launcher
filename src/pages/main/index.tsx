@@ -1,9 +1,9 @@
 import React from 'react'
 import { observer } from 'mobx-react-lite'
-import MinecraftAvatar from './minecraft-avatar'
-import WelcomeMessage from './welcome-message'
-import LaunchButton from './launch-button'
-import VersionSelector from './version-selector'
+import MinecraftAvatar from './components/minecraft-avatar'
+import WelcomeMessage from './components/welcome-message'
+import LaunchButton from './components/launch-button'
+import VersionSelector from './components/version-selector'
 
 const MainPage = observer(() => {
   return (
