@@ -1,8 +1,8 @@
 import { makeAutoObservable } from 'mobx'
 import type z from 'zod'
 import type RootStore from '.'
-import type { Version, VersionGroup } from '@/util/version'
-import { VersionEvent } from '@/util/version'
+import type { Version, VersionGroup } from '@/types/version'
+import { VersionEvent } from '@/types/version'
 import samples from '@/samples.json'
 
 interface GroupedVersion {

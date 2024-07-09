@@ -4,7 +4,7 @@ import { Dropdown } from 'primereact/dropdown'
 import type z from 'zod'
 import { useTranslation } from 'react-i18next'
 import { observer } from 'mobx-react-lite'
-import type { ModApi, Version } from '@/util/version'
+import type { ModApi, Version } from '@/types/version'
 import type { GroupedVersion } from '@/store/version'
 import { useStore } from '@/components/store-context'
 
@@ -74,8 +74,7 @@ const VersionSelector = observer(() => {
 
     if (properties.mod) {
       const { mod } = properties
-      descriptions.push(`${getApiName(mod.api)
-        } ${t('modCount', { ns: 'versions', count: mod.count })
+      descriptions.push(`${getApiName(mod.api)} ${t('modCount', { ns: 'versions', count: mod.count })
         }`)
     }
     return descriptions.join(' / ')
